@@ -349,6 +349,7 @@ span {
   margin-left: auto;
 }
 .link-text {
+  position: relative;
   font-weight: 500;
   font-size: 14px;
   line-height: 16px;
@@ -374,7 +375,7 @@ h3 {
 
   color: #212121;
 }
-.link-teitle::after {
+.link-text::after {
   content: " ";
 
   display: block;
@@ -386,8 +387,13 @@ h3 {
   border-radius: 2px;
   left: 0;
   bottom: 0;
-}
+  opacity: 0;
 
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.link-text:hover::after {
+  opacity: 1;
+}
 footer {
   display: flex;
   flex-wrap: wrap;
