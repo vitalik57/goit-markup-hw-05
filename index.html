@@ -24,11 +24,11 @@
                 <ul class="hero ">
 
 
-                    <li class="web"><a class="com" href=""><svg class="web-studio"  width="16px" height="12px">
+                    <li class="web"><a class="phone" href=""><svg class="web-studio"  width="16px" height="12px">
                         <use href="./image/symbol-defs.svg#icon-envelope-hover-2"></use>
-                    </svg></a>info@devstudio.com</li>
+                    </svg>info@devstudio.com</a></li>
                     <li class="number"><a class="phone" href="tel:+38096111111"><svg class="web-studio" width="16px" height="12px">
-                        <use href="./image/symbol-defs.svg#icon-smartphone"></use></svg></a>+38 096 111 11 11</li>
+                        <use href="./image/symbol-defs.svg#icon-smartphone"></use></svg>+38 096 111 11 11</a></li>
 
 
                 </ul>
@@ -79,9 +79,17 @@
             <div class="container">
                 <h2 class="flix" >Чем мы занимаемся</h2>
                 <ul class="dragon five">
-                    <li class="one"><img src="./image/img1.png" alt="Чем мы занимаемся" width="370"></li>
-                    <li class="one"><img src="./image/img2.jpg" alt="Чем мы занимаемся" width="370"></li>
-                    <li class="one"><img src="./image/img3.jpg" alt="Чем мы занимаемся" width="370"></li>
+                    <li class="one-appendix">
+                        <img src="./image/img1.png" alt="Чем мы занимаемся" width="370">
+                        <p class="annex">Десктопные приложения</p>
+                       
+                    </li>
+                    <li class="one-appendix"><img src="./image/img2.jpg" alt="Чем мы занимаемся" width="370">
+                    <p class="annex">Мобильные приложения</p>
+                    </li>
+                    <li class="one-appendix"><img src="./image/img3.jpg" alt="Чем мы занимаемся" width="370">
+                    <p class="annex">Дизайнерские решения</p>
+                    </li>
 
                 </ul>
             </div>
@@ -267,13 +275,45 @@
            
 
         </section>
-        <div class="backdrop">
+        <div role="group" class="backdrop is-hidden">
             <div class="modal">
-                <button class="close">
-                    <svg width="11" height="11">
-                        <use class="close-modal" href="./image/symbol-defs.svg#icon-Vector-13"></use>
-
+               <form class="form" >
+                   <h3 class="group-title">Оставьте свои данные, мы вам перезвоним</h3>
+               <div class="form-field">
+                    <label for="name">Имя</label>
+                    <input type="text" name="user-name" id="name" autofocus />
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./image/symbol-defs.svg#icon-person-black-18dp-1"></use>
                     </svg>
+               </div>
+
+                  <div class="form-field">
+                    <label for="tel"></label>
+                    <input type="tel" name="tel" id="name" />
+                  </div>
+
+                   <div class="form-field">
+                    <label for="mail">Почта</label>
+                    <input type="email" name="mail" id="mail" />
+                   </div>
+
+                  
+                 <div class="">
+                        <label for="comment">Комментарий</label>
+                        <textarea class="form-text" name="comment" id="comment" placeholder="Введите текст"></textarea>
+                 </div>
+                 <div class="">
+                    <input type="checkbox" name="topic" value="send" id="send" checked />
+                    <label for="send">Соглашаюсь с рассылкой и принимаю Условия договора</label>
+                  </div>
+                   
+                   <button type="submit">Отправить</button>
+                   <button class="close">
+                <svg width="11" height="11">
+                    <use class="close-modal" href="./image/symbol-defs.svg#icon-Vector-13"></use>
+            
+                </svg>
+            </form>
             </button>
 
             </div>
@@ -332,9 +372,16 @@
             
                     </ul>
                 </div>
-            
-            
-            
+              <form >
+                  <p>Подпишитесь на рассылку</p>
+                  
+                    <div>
+                        <label for="mail"></label>
+                        <input type="email" name="mail" id="mail">
+                    </div>
+
+                  
+              </form>
             
             </div>
        </div>
