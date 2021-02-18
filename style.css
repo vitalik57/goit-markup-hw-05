@@ -845,7 +845,7 @@ li.number:hover {
 }
 .backdrop.is-hidden {
   opacity: 1;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 textarea {
   resize: none;
@@ -881,13 +881,23 @@ textarea {
 }
 .group-title {
   margin-bottom: 12px;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: #212121;
 }
 .form-icon {
   position: absolute;
-  top: 30px;
-  left: 0;
+  top: 35px;
+  left: 14px;
 
   display: inline-block;
+}
+.form-icon svg:hover {
+  color: #2196f3;
 }
 .form-text {
   width: 448px;
@@ -895,4 +905,17 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
+}
+.form-icon-phone {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+
+  display: inline-block;
+}
+.form-input:hover {
+  color: #2196f3;
+}
+.form-input {
+  padding-left: 42px;
 }

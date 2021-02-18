@@ -281,7 +281,7 @@
                    <h3 class="group-title">Оставьте свои данные, мы вам перезвоним</h3>
                <div class="form-field">
                     <label for="name">Имя</label>
-                    <input type="text" name="user-name" id="name" autofocus />
+                    <input class="form-input" type="text" name="user-name" id="name" autofocus />
                     <svg class="form-icon" width="18px" height="18px">
                         <use href="./image/symbol-defs.svg#icon-person-black-18dp-1"></use>
                     </svg>
@@ -289,12 +289,18 @@
 
                   <div class="form-field">
                     <label for="tel"></label>
-                    <input type="tel" name="tel" id="name" />
+                    <input class="form-input" type="tel" name="tel" id="name" />
+                    <svg class="form-icon-phone" width="18px" height="18px">
+                        <use href="./image/symbol-defs.svg#icon-Vector-14"></use>
+                    </svg>
                   </div>
 
                    <div class="form-field">
                     <label for="mail">Почта</label>
-                    <input type="email" name="mail" id="mail" />
+                    <input  class="form-input" type="email" name="mail" id="mail" />
+                    <svg class="form-icon" width="18px" height="18px">
+                        <use href="./image/symbol-defs.svg#icon-email-black-18dp-1"></use>
+                    </svg>
                    </div>
 
                   
@@ -303,7 +309,7 @@
                         <textarea class="form-text" name="comment" id="comment" placeholder="Введите текст"></textarea>
                  </div>
                  <div class="">
-                    <input type="checkbox" name="topic" value="send" id="send" checked />
+                    <input class="form-input" type="checkbox" name="topic" value="send" id="send" checked />
                     <label for="send">Соглашаюсь с рассылкой и принимаю Условия договора</label>
                   </div>
                    
