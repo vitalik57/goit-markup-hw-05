@@ -679,6 +679,8 @@ header {
   left: 0px;
   top: 80px;
   background-image: url("./image/Img20.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /* background-image: url("./image/Img20.jpg"); */
 li {
