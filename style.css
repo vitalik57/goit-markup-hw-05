@@ -359,8 +359,10 @@ span {
   transition-property: all;
   transition-duration: 250ms;
 }
-.link-text:hover,
 .link-text :focus {
+  color: #2196f3;
+}
+.link-text:hover {
   color: #2196f3;
 }
 .link-text:nth-child(2n) {
@@ -605,6 +607,7 @@ footer {
   background-size: 55px 60px;
 }
 .tipe {
+  color: #ffffff;
   font-weight: bold;
   line-height: 30px;
 
@@ -672,6 +675,7 @@ header {
   margin-bottom: 0px;
 }
 .work {
+  background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
@@ -680,7 +684,7 @@ header {
   padding-bottom: 94px;
 }
 .blake {
-  width: 1600px;
+  /* width: 1600px; */
   /* height: 600px; */
   left: 0px;
   top: 80px;
@@ -699,13 +703,8 @@ li {
   background-color: #2196f3;
 }
 .vector {
-  transition-property: all;
-  transition-duration: 250ms;
-  transition-timing-function: linear;
   width: 170px;
   height: 90px;
-  border: 1px solid #afb1b8;
-  box-sizing: border-box;
 }
 .vector svg {
   transition-property: all;
@@ -713,12 +712,23 @@ li {
   transition-timing-function: linear;
 }
 .company {
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  transition-property: all;
+  transition-duration: 250ms;
+  transition-timing-function: linear;
   border-radius: 4px;
   align-items: center;
   display: flex;
   width: 100%;
   height: 100%;
   justify-content: center;
+}
+.company:hover {
+  border-color: #2196f3;
+}
+.company:focus {
+  border-color: #2196f3;
 }
 .comand-link:focus {
   color: #2196f3;
@@ -958,4 +968,44 @@ textarea {
 }
 .form-input {
   padding-left: 42px;
+}
+
+.form-input-checkbox {
+}
+.messeg {
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: #2f303a;
+}
+.footer-messeg {
+  margin-left: 93px;
+}
+.lable-checkbox::after {
+  content: " ";
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+  /* background-color: chartreuse; */
+  border: 2px solid black;
+  border-radius: 2px;
+  background-color: #2196f3;
+  background-image: url(./image/symbol-defs.svg#icon-icon-check);
+}
+.lable-checkbox {
+  display: inline-block;
+  outline: 1px solid black;
+}
+.checkbox-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 2px solid black;
+}
+.lable-checkbox:checked + .checkbox-icon {
+  border: 2px solid black;
+  border-radius: 2px;
+  background-color: #2196f3;
+  background-image: url(./image/symbol-defs.svg#icon-icon-check);
 }
