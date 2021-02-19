@@ -1,31 +1,18 @@
-  "liveSassCompile.settings.formats":[
-        // This is Default.
-        {
-            "format": "expanded",
-            "extensionName": ".css",
-            "savePath": null
-        },
-        // You can add more
-        {
-            "format": "compressed",
-            "extensionName": ".min.css",
-            "savePath": "/dist/css"
-        },
-        // More Complex
-        {
-            "format": "compressed",
-            "extensionName": ".min.css",
-            "savePath": "~/../css/"
-        }
-    ]
-     "liveSassCompile.settings.excludeList": [ 
-        "**/node_modules/**",
-        ".vscode/**" 
-    ]
-    "liveSassCompile.settings.excludeList": [
-    "path/subpath/*[!(file1|file2)].scss"
-]
- "liveSassCompile.settings.includeItems": [
-        "path/subpath/a.scss",
-        "path/subpath/b.scss",
-    ]
+  {
+  "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded",
+      "extensionName": ".css",
+      "savePath": "/css"
+    },
+    {
+      "format": "compressed",
+      "extensionName": ".min.css",
+      "savePath": "/css"
+    }
+  ],
+  "liveSassCompile.settings.excludeList": ["**/node_modules/**", ".vscode/**"],
+  "liveSassCompile.settings.generateMap": true,
+  "liveServer.settings.port": 1235,
+  "liveSassCompile.settings.autoprefix": null
+}
